@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DarkToggle.Base" parent="Theme.Material3.DayNight">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+    </style>
+
+    <style name="Theme.DarkToggle" parent="Theme.DarkToggle.Base">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

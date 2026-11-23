@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">扩展深色例外</string>
+
+    <string name="global_switch">扩展深色主题</string>
+    <string name="global_hint">Expanded · FORCE_INVERT_COLOR_DARK</string>
+    <string name="global_needs_permission">需要一次性 adb 授权</string>
+    <string name="global_unknown">当前无法读取系统值</string>
+    <string name="excluded_count">应用例外：%1$d 个</string>
+
+    <string name="search_hint">搜索应用或包名</string>
+    <string name="empty">没有匹配的应用</string>
+    <string name="include_system">显示系统应用</string>
+    <string name="refresh">刷新</string>
+    <string name="about">关于</string>
+    <string name="copy">复制</string>
+    <string name="close">关闭</string>
+    <string name="copied">命令已复制</string>
+
+    <string name="permission_hint">扩展深色总开关需要 adb 授权，点此查看</string>
+    <string name="write_settings_missing">缺少 WRITE_SETTINGS，应用例外无法写入</string>
+    <string name="write_failed">写入系统设置失败</string>
+
+    <string name="permission_dialog_title">adb 授权说明</string>
+    <string name="permission_dialog_message">应用例外写入依赖 targetSdk 22 + WRITE_SETTINGS，安装时已自动授予，不需要 adb。\n\n扩展深色总开关写的是 Settings.Secure，必须一次性授予 WRITE_SECURE_SETTINGS：\n\n%1$s\n\nAndroid 14 及以上会阻止安装 targetSdk &lt; 23 的应用，所以首次安装要带 --bypass-low-target-sdk-block。\n\n覆盖安装（同签名）会保留授权；卸载重装后需要重新执行 pm grant。</string>
+
+    <string name="about_title">关于</string>
+    <string name="about_message">DarkToggle\n版本 %1$s\n\n对应功能：Android 16+ 的扩展深色主题（Expanded dark theme / FORCE_INVERT_COLOR_DARK）。\n\n总开关：Settings.Secure / accessibility_force_invert_color_enabled\n应用例外：Settings.System / accessibility_force_invert_color_override_packages_to_disable\n\nMagicOS 的「更多深色模式设置」（AppDarkModeActivity）是荣耀自己的固定白名单（hn_forcedark_* / persist.sys.hn.forcedark_policy），不是本功能；它只显示名单内已安装的应用，不能添加名单外的应用。\n\nAndroid 12+ 会拦截隐藏键的读取，列表显示的是上一次成功写入的本地镜像；实际写入仍然生效。\n\ntargetSdk = 22 是绕过写入检查的关键，不要改。</string>
+</resources>
